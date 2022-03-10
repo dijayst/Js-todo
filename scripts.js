@@ -22,30 +22,26 @@ document.getElementById("click").onclick=()=>{
 
 
 let gay=[]
+let getit=document.getElementById("getit");
+
 todo=(e)=>{
 const add=document.getElementById("add").value;
-gay.push(add)
-//alert(add)
+gay.push(add +"<br/>")
 if(add==""){
     window.alert("input a todo");
      
 }else{
-    // const hgh=gay.map((item)=>{
-      //  item *2
-            document.getElementById("getit").innerHTML=(add)
-     // document.write(<br/>)
-  //  })
+           getit.innerHTML=gay
+          
     console.log(gay)
-   // console.log(hgh) ;
 }
 console.log(gay)
 return gay[add]
 }
-/*
-const getitinput=document.getElementById("getitinput")
-document.getElementById("click").onclick=()=>{
-todo()
-alert("elment "+ add + "hhui"+ gay)
-console.log(todo())
+decrease=()=>{
+  
+  gay.pop()
+  getit.innerHTML=gay 
+    
 console.log(gay)
-}*/
+}
