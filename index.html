@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div id="brower" class="border">
-       <div id="addingtodo" class="bord">
+   <div id="brower" class="todo">
+       <div id="addingtodo" class="enterinput">
+           <h1>
+               React Todo App
+           </h1>
            <p id="write" onchange="todo">Add a new Todo</p>
 
-           <input id="add" /><button id="click" onclick="todo()" class="btn">Add Todo</button>
-           <button id="click" onclick="decrease()" class="btn">delete Todo</button>
+           <input id="add"  class="input"/><button id="click" onclick="todo()" class="btn">Add Todo</button>
+           <button id="click" onclick="decrease()" class="">delete Todo</button>
        </div>
-       <div id="getit">
+       <div  class="todooutput">
+           <p id="getit"></p>
        </div>
    </div>
 </body>
